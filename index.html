@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="weatherApp.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+     <script
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlVBGPNblse1Xqq9wj5evXANEmrjrnywY&libraries=&v=weekly" defer></script>
+  </head>
+  <body>
+    <header>
+    <h1>Weather Forecast</h1>
+    </header>
+    <nav>
+    <input id="userInput" type="text" name="" placeholder="Enter City Name"><br>
+    <br>
+    <button id="userButton" type="button" name="button">Weather report by city</button>
+    <br>
+    <br>
+    <button id="locationButton" type="button" name="button">Weather report by your location</button>
+    </nav>
+    <section>
+      <h2 id="h2"></h2>
+      <div>
+      <p> <span id="city"></span></p>
+      </div>
+      <div>
+      <p> <span id="temperature"></span></p>
+      </div>
+      <div>
+      <img src="" alt="" id="weather_icon" >
+      </div>
+      <div>
+      <p> <span id="wind"></span></p>
+      </div>
+      <div>
+      <p> <span id="cloudy"></span></p>
+      </div>
+      <div>
+      <p> <span id="sunrise"></span></p>
+      </div>
+      <div>
+      <div>
+      <p> <span id="sunset"></span></p>
+      </div>
+      <p id="co-ordinates"></p>
+      <div class="maps" id="map">
+      </div>
+    </section>
+    <div id="load_screen">
+    <div id="loading">
+      Loading The Weather Information
+    </div>
+  </div>
+
+
+  <script src="weatherApp.js"></script>
+
+  </body>
+</html>
